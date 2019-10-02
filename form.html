@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form | Modern College</title>
+		<meta name="viewport" content="width=device-width, initial-scale=-1">
+		<script>
+			function isNumber(event){
+				var keycode = event.keyCode;
+				if(keycode > 48 && keycode < 57)
+				{
+					return true;
+				}
+				return false;
+			}
+		</script>
+		<style>
+			input, select, textarea {
+				margin-bottom: 10px;
+				border-radius: 5px;
+				background-color: #CFD8DC;
+				outline: none;
+				border: 1px solid #cecece;
+				font-size: 11pt;
+				padding: 5px 5px 5px;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+	</head>
+	<body>
+		<div class="head">
+			<div class="row">
+				<div class="column" >
+					<img src="resources/logo.png" height="80">
+				</div>
+				<div class="column" style="">
+					<h1>Modern College</h1>
+				</div>
+			</div>
+		</div>
+		<div class="accent"></div>
+		<div class="card">
+			<h2 align="center">Enquiry Form</h1>
+			<form action="print.html">
+				<p style="font-size: 10pt;">Personal Detials</p>
+				<input style="width:40%" type="text" name="firstname" placeholder="First Name*" maxlength="15" autofocus required><br>
+				<input style="width:40%" type="text" name="middlename" placeholder="Middle Name" maxlength="15" ><br>
+				<input style="width:40%" type="text" name="lastname" placeholder="Last Name*" maxlength="15" required><br>
+				<p style="font-size: 8pt;">Date of Birth*</p>
+				<input type="date" name="dateofbirth" max="2003-12-31" min="1997-01-01" required>
+				<p style="font-size: 8pt;">Gender*</p>
+				<input type="radio" name="sex" value="Male" required>Male
+				<input type="radio" name="sex" value="Female" required>Female<br>
+				<p style="font-size: 10pt;">Contact Details</p>
+				<input style="width:30px;" type="text" placeholder="+ 91" readonly>
+				<input style="width:25%" type="text" name="phone" placeholder="Phone" maxlength="10"  minlength="10" onkeypress="return isNumber(event)" required><br>
+				<input style="width:50%" type="email" name="email" placeholder="Email*" required><br>
+				<textarea style="max-width:400px; max-height:100px;" type="text" name="address" placeholder="Address"></textarea><br/>
+				<input style="width:20%" type="text" name="pincode" placeholder="Postal Code" minlength="6" maxlength="6" onkeypress="return isNumber(event)"><br>
+				<p style="font-size: 10pt;">College Details</p>
+				<select name="standard" required>
+					<option value="">Select Standard*</option>
+					<option value="10th">10th</option>
+					<option value="11th">11th</option>
+					<option value="12th">12th</option>
+				</select><br>
+				<p style="font-size: 8pt;">Academic Percentage*</p>
+				<input type="number" name="percentage" value="Academic Percentage" min="35" max="100" required>
+				<p style="font-size: 10pt;">* Indicates Required Fields</p>
+				<p align="center">
+					<input type="reset" value="RESET" class="btnred">
+					<input type="submit" value="PROCEED" class="btngreen">
+				</p>
+			</form>
+		</div>
+		<div class="accent"></div>
+		<div class="bottom">
+			<p style="margin-bottom:0px;"align="right">&copy;&nbsp;Modern College 2018</p>
+			<p style="font-size:11px; margin-top:3px;" align="right"><a href="webpage.zip">[o]</a>&nbsp;&nbsp;by Aakash Singh</p>
+		</div>
+	</body>
+</html>
