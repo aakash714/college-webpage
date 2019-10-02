@@ -1,0 +1,127 @@
+body {
+    height: 100%;
+    margin: 0;
+	background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family: arial;
+	color: #212121;
+}
+div.card {
+	background-color: #ffffff;
+	padding: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
+	width:800px;
+	margin:0 auto;
+}
+div.navbar{
+	margin:0 auto;
+	width: 880px;
+}
+h1 {
+	font-size: 60px;
+	margin:0;
+	margin-top:5px;
+}
+div.head {
+	background: linear-gradient(74deg, #00796B  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #009688 60%, rgba(0,0,0,0) 60%) ,linear-gradient(10deg, #B2DFDB 90%, #FF5722 90%);
+	margin:0 auto;
+	color: #ffffff;
+	width: 800px;
+	padding: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+div.accent {
+	background-color: #FF5722;
+	padding: 2px;
+	padding-left: 40px;
+	padding-right: 40px;
+	width:800px;
+	margin:0 auto;
+}
+div.bottom {
+	background-color: #009688;
+	padding: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
+	width:800px;
+	margin:0 auto;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00796B;
+}
+
+li.navbar {
+    float: left;
+    border-right:1px solid #BDBDBD;
+}
+
+li.navbar:last-child {
+    border-right: none;
+}
+
+li.navbar a.navbar {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.navbar a.navbar:hover:not(.active) {
+    background-color: #FF5722;
+}
+
+.active {
+    background-color: #009688;
+}
+.column {
+	float: left;
+	padding: 10px;
+}
+
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.btnred {
+	background-color: #f44336;
+	padding: 10px 45px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	margin: 0;
+	margin-right:4px;
+	color: #ffffff;
+	font-weight: bold;
+	box-shadow: 5px 5px 20px #888888;
+}
+.btnred:hover {
+	background-color: #f44336;
+	box-shadow: inset 2px 2px 20px #888888;
+}
+.btngreen {
+	background-color: #8BC34A;
+	padding: 10px 45px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	margin: 0;
+	color: #ffffff;
+	font-weight: bold;
+	box-shadow: 5px 5px 20px #888888;
+}
+.btngreen:hover {
+	background-color: #7cb342;
+	box-shadow: inset 2px 2px 20px #888888;
+}
+
